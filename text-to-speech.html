@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text to speech && speech to text</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="model_box">
+            <h1>Converter [TEXT &#11106; SPEECH]</h1>
+            <div class="textarea_sec">
+                <textarea name="text_lines" cols="40" rows="5" id="textarea_part"></textarea>
+                <div>
+                    <label for="language_select">Select Language:</label>
+                    <select id="language_select">
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="voice_gender_male" type="radio" name="voice_gender" value="male">
+                    <label for="voice_gender_male">Male</label>
+                    
+                    <input id="voice_gender_female" type="radio" name="voice_gender" value="female">
+                    <label for="voice_gender_female">Female</label>
+                </div>
+            </div>
+    
+            <div class="model_button">
+                <button id="restart">Restart program</button>
+                <button id="Convert_Speech" onclick="Convert_Speech()">Click For Speech</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
